@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Soluções Angola</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8ffff;
+      color: #003333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #00b3c9, #007B8A);
+      color: white;
+      padding: 2em 1em;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0.2em 0;
+      font-size: 2.2em;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.1em;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav button {
+      background: none;
+      border: none;
+      padding: 1em;
+      font-size: 1em;
+      color: #007B8A;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    nav button:hover {
+      background-color: #e0f7fa;
+    }
+
+    section {
+      display: none;
+      padding: 2em;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    .titulo {
+      color: #007B8A;
+    }
+
+    footer {
+      background-color: #007B8A;
+      color: white;
+      text-align: center;
+      padding: 2em;
+      font-size: 0.9em;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <script>
+    function mostrarSecao(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+    window.onload = function() {
+      mostrarSecao('quem-somos');
+    };
+  </script>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  header, nav, section, footer {
+    padding: 10px;
+  }
+  nav button {
+    display: inline-block;
+    margin: 5px 3px;
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+  .contact-line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+  }
+  .contact-line a {
+    word-break: break-word;
+  }
+</style>
+
+</head>
+<body>
+  <header>
+      <h1>Soluções Angola</h1>
+      <p>Excelência em cada detalhe. Soluções à sua medida.</p>
+  </header>
+
+  <nav>
+      <button onclick="mostrarSecao('quem-somos')">Quem Somos?</button>
+      <button onclick="mostrarSecao('servicos')">Serviços</button>
+      <button onclick="mostrarSecao('compromisso')">Compromisso</button>
+      <button onclick="mostrarSecao('missao')">Missão</button>
+      <button onclick="mostrarSecao('contactos')">Contactos</button>
+  </nav>
+
+  <section id="quem-somos" class="active">
+      <h2 class="titulo">Quem Somos?</h2>
+      <p>A Soluções Angola é uma empresa angolana especializada em limpezas profissionais e soluções práticas para residências, escritórios e espaços comerciais.</p>
+      <p>Com foco em excelência, confiança e qualidade, promovemos ambientes mais limpos, organizados e saudáveis.</p>
+  </section>
+
+  <section id="servicos">
+      <h2 class="titulo">Os Nossos Serviços</h2>
+      <ul>
+          <li><strong>Limpeza Doméstica Diária:</strong> Limpeza regular da casa com discrição e profissionalismo.</li>
+          <li><strong>Limpezas Pós-Obras:</strong> Preparação do espaço após obras ou mudanças.</li>
+          <li><strong>Limpezas Comerciais:</strong> Manutenção de higiene em escritórios e estabelecimentos.</li>
+          <li><strong>Serviços Personalizados:</strong> Adaptamo-nos às suas necessidades específicas.</li>
+      </ul>
+  </section>
+
+  <section id="compromisso">
+      <h2 class="titulo">O Nosso Compromisso</h2>
+      <ul>
+          <li>Profissionais qualificados e de confiança</li>
+          <li>Produtos e equipamentos de qualidade</li>
+          <li>Pontualidade e flexibilidade</li>
+          <li>Excelência, higiene e discrição</li>
+      </ul>
+  </section>
+
+  <section id="missao">
+      <h2 class="titulo">Missão</h2>
+      <p>Proporcionar serviços de limpeza de excelência, promovendo o bem-estar, a organização e o conforto dos nossos clientes.</p>
+      <h2 class="titulo">Visão</h2>
+      <p>Ser uma referência nacional no sector de serviços, reconhecida pela qualidade, inovação e profissionalismo.</p>
+      <h2 class="titulo">Valores</h2>
+      <p>Compromisso | Rigor | Transparência | Respeito | Eficiência</p>
+  </section>
+
+  <section id="contactos">
+      <h2 class="titulo">Contactos</h2>
+      <p><strong>Email:</strong> <a href="mailto:Solucoes.angola@outlook.com">Solucoes.angola@outlook.com</a></p>
+      <p><strong>Telefones:</strong> <a href="tel:+244930930417">+244 930 930 417</a> | <a href="tel:+244921901803">+244 921 901 803</a></p>
+      <p><strong>Localização:</strong> Luanda, Angola</p>
+      <p><strong>Instagram:</strong> <a href="https://instagram.com/solucoesangola" target="_blank">@solucoesangola</a></p>
+  </section>
+
+  
+<footer style="background-color: #007B8A; color: white; text-align: center; padding: 2em; font-family: 'Arial', sans-serif; font-size: 0.9em;">
+    <div style="margin-bottom: 0.5em;">
+        <strong>Email:</strong>
+        <a href="mailto:Solucoes.angola@outlook.com" style="color: white; text-decoration: none;">Solucoes.angola@outlook.com</a>
+    </div>
+    <div style="margin-bottom: 0.5em;">
+        <strong>Telefones:</strong>
+        <a href="tel:+244930930417" style="color: white; text-decoration: none;">+244 930 930 417</a> |
+        <a href="tel:+244921901803" style="color: white; text-decoration: none;">+244 921 901 803</a>
+    </div>
+    <div style="margin-bottom: 0.5em;">
+        <strong>Localização:</strong> Luanda, Angola
+    </div>
+    <div style="margin-bottom: 0.5em;">
+        <strong>Instagram:</strong>
+        <a href="https://www.instagram.com/solucoes_angola" target="_blank" style="color: white; text-decoration: none;">@solucoesangola</a>
+    </div>
+    <div style="margin-top: 1.5em; font-size: 0.8em;">
+        © 2025 Soluções Angola. Todos os direitos reservados.
+    </div>
+</footer>
+
+</body>
+</html>
